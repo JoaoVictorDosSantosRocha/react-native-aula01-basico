@@ -4,12 +4,12 @@ import estiloInicial from './estiloInicial';
 
 function Inicial({ navigation }) {
 
-    const abrirColecao = () => {
-        navigation.navigate('Colecao')
+    const abrirChat = () => {
+        navigation.navigate('Chat')
     }
 
-    const abrirItem = () => {
-        navigation.navigate('Item')
+    const abrirResu = () => {
+        navigation.navigate('Sobre')
     }
     return (
         <View style={estiloInicial.container}>
@@ -17,13 +17,14 @@ function Inicial({ navigation }) {
 
                 <Text style={estiloInicial.texto}>Bem-Vindo!</Text>
 
-                <TouchableOpacity style={estiloInicial.botaoContainer} onPress={abrirColecao}>
+                <TouchableOpacity style={estiloInicial.botaoContainer} onPress={abrirChat}>
                     <Text style={estiloInicial.botaoTexto}>Chat</Text>
                 </TouchableOpacity>
 
-              <TouchableOpacity style={estiloInicial.botaoContainer} onPress={abrirItem}>
-                  <Text style={estiloInicial.botaoTexto}>Sobre</Text>
-              </TouchableOpacity>
+                <TouchableOpacity style={estiloInicial.botaoContainer} onPress={abrirResu}>
+                    <Text style={estiloInicial.botaoTexto}>Resumo do Projeto</Text>
+                </TouchableOpacity>
+
             </View>
         </View>
     )

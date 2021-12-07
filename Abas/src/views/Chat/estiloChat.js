@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { withTheme } from 'styled-components';
 
 const estiloChat = StyleSheet.create({
     container: {
@@ -9,7 +10,7 @@ const estiloChat = StyleSheet.create({
     borda: {
         backgroundColor: '#081a31',
         width: '80%',
-        height: '25%',
+        height: '40%',
         borderRadius: 10,
     },
     texto: {

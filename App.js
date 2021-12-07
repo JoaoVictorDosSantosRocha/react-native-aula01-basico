@@ -9,7 +9,7 @@ import Login from './Abas/src/views/Login/Login';
 import Inicial from './Abas/src/views/Inicial/Inicial';
 import Chat from './Abas/src/views/Chat/Chat';
 import Perfil from './Abas/src/views/Perfil/Perfil';
-import Resumo from './Abas/src/views/Resumo/Resumo';
+import Resumo from './Abas/src/views/Sobre/Resumo';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();

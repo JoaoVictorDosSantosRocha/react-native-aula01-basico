@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, View, TouchableOpacity } from 'react-native';
-import estiloChat from './estiloColecao';
+import estiloChat from './estiloChat';
 
 function Chat({ navigation }) {
 

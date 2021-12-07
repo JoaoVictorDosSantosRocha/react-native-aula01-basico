@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, View, TouchableOpacity } from 'react-native';
-import estiloResumo from './estiloItem';
+import estiloResumo from './estiloResumo';
 
 function Resumo({ navigation }) {
 

@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-const estiloPerfil = StyleSheet.create({
+const estiloSite = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'center',
@@ -9,7 +9,7 @@ const estiloPerfil = StyleSheet.create({
     borda: {
         backgroundColor: '#081a31',
         width: '80%',
-        height: '25%',
+        height: '40%',
         borderRadius: 10,
     },
     texto: {
@@ -38,4 +38,4 @@ const estiloPerfil = StyleSheet.create({
         fontWeight: 'bold'
     },
 });
-export default estiloPerfil;
+export default estiloSite;

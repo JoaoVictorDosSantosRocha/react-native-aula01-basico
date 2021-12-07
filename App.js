@@ -8,7 +8,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import Login from './Abas/src/views/Login/Login';
 import Inicial from './Abas/src/views/Inicial/Inicial';
 import Chat from './Abas/src/views/Chat/Chat';
-import Perfil from './Abas/src/views/Perfil/Perfil';
+import Site from './Abas/src/views/Site/Site';
 import Resumo from './Abas/src/views/Sobre/Resumo';
 
 const Stack = createStackNavigator();
@@ -55,7 +55,7 @@ function rotasDrawer() {
     <Drawer.Screen name="Inicial"component={rotasStack}/>
     <Drawer.Screen name="Chat"component={Chat}/>
     <Drawer.Screen name="Sobre"component={Resumo}/>
-    <Drawer.Screen name="Perfil"component={Perfil}/>
+    <Drawer.Screen name="Site"component={Site}/>
   </Drawer.Navigator>
   );
 }
@@ -72,7 +72,7 @@ function rotasTab() {
     }
     >
       <Tab.Screen name="Inicial" component={rotasDrawer} />
-      <Tab.Screen name="Perfil" component={Perfil} />
+      <Tab.Screen name="Site" component={Site} />
     </Tab.Navigator>
   );
 }

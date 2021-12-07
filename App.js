@@ -7,9 +7,9 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import Login from './Abas/src/views/Login/Login';
 import Inicial from './Abas/src/views/Inicial/Inicial';
-import Colecao from './Abas/src/views/Colecao/Colecao';
-import Item from './Abas/src/views/Item/Item';
+import Chat from './Abas/src/views/Chat/Chat';
 import Perfil from './Abas/src/views/Perfil/Perfil';
+import Resumo from './Abas/src/views/Resumo/Resumo';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -28,19 +28,19 @@ function rotasStack() {
       }
       />
       <Stack.Screen
-      name="Colecao"
-      component={Colecao}
+      name="Chat"
+      component={Chat}
       options={
-        { cardStyle: styles.screenColecao,
+        { cardStyle: styles.screenChat,
           headerShown: false,
         }
       }
       />
       <Stack.Screen
-      name="Item"
-      component={Item}
+      name="Sobre"
+      component={Resumo}
       options={
-        {  cardStyle: styles.screenItem,
+        {  cardStyle: styles.screenResumo,
           headerShown: false,
         }
       }
@@ -53,8 +53,8 @@ function rotasDrawer() {
   return (
   <Drawer.Navigator initialRouteName='Inicial'>
     <Drawer.Screen name="Inicial"component={rotasStack}/>
-    <Drawer.Screen name="Chat"component={Colecao}/>
-    <Drawer.Screen name="Sobre"component={Item}/>
+    <Drawer.Screen name="Chat"component={Chat}/>
+    <Drawer.Screen name="Sobre"component={Resumo}/>
     <Drawer.Screen name="Perfil"component={Perfil}/>
   </Drawer.Navigator>
   );
@@ -110,10 +110,10 @@ const styles = StyleSheet.create({
   screenInicial: {
     backgroundColor: '#FCCB02'
   },
-  screenColecao: {
+  screenChat: {
     backgroundColor: '#FCCB02'
   },
-  screenItem: {
+  screenResumo: {
     backgroundColor: '#FCCB02'
   },
 });
